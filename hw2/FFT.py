@@ -3,7 +3,7 @@ import numpy as np
 import serial
 import time
 
-Fs = 1000.0;  # sampling rate, 1000.0 for 10Hz, 5000.0 for 50Hz, 10000,0 for 100Hz
+Fs = 1000.0;  # sampling rate, 1000.0 for 10Hz, 5000.0 for 50Hz, 10000.0 for 100Hz
 Ts = 1.0/Fs; # sampling interval
 t = np.arange(0,1,Ts) # time vector; create Fs samples between 0 and 1.0 sec.
 y = np.arange(0,1,Ts) # signal vector; create Fs samples
