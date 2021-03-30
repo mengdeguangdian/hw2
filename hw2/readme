@@ -20,3 +20,9 @@ how to execute my program:
    do the modification based on your approved frequency before you push the button)
 7. The FFT analysis may consume several minutes, sometimes there will be error information immediately like (error on line 22：convert string to float）
    Then please use "$ sudo python3 FFT.py" to try again.
+
+Results： After low_pass filter, the peaks and the bottom sharp angles are becoming smooth because I use a Rc filter (cut-off frequency ~ 100Hz) to block
+          the frequency components which are higher than 100Hz.
+          By doing the FFT analysis, I can see that the most significant component is near the 0Hz(dc value) bacause this triangle wave has a dc offset about 0.5,
+          If the selected frequency is fc, the second significant frequency is fc. There will also be frequencies around 2fs, 3fs ...... The amplitude are becoming 
+          lower as mutiple-frequency components becoming higher.
